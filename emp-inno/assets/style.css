@@ -1,0 +1,77 @@
+
+.body{
+    background: #446c84;
+    text-decoration: none;
+    list-style: none;
+}
+.container-fluid {
+    position: absolute;
+    padding: 25px;
+    margin-left: 70px;
+    width: 100%;
+}
+form.login_form {
+    position: relative;
+    padding: 75px;
+    margin-left: 25%;
+}
+div#login {
+    color: #3a31b3;
+    padding: 15px;
+}
+input[type="text"] {
+    width: 250px;
+    margin-left: 50px;
+}
+input[type="password"] {
+    width: 250px;
+    margin-left: 50px;
+}
+button.login {
+    background: #b99c9c;
+    margin-left: 70px;
+}
+button.signup {
+  background: #b99c9c;
+    margin-left: 170px;
+}
+.forgot a{
+    color: blue;
+    text-decoration: none;
+    margin-left: 170px;
+}
+/*..... signup styles.....*/
+body.signup {
+    background: #446c84;
+}
+form.form-horizontal {
+    margin-left: 20%;
+}
+strong.msg {
+    margin-left: 250px;
+    /* margin-bottom: 54px; */
+}
+label.control-label {
+    margin-left: 50px;
+}
+p.help-block {
+      color: #19214e;
+    margin-left: 235px;
+}
+input#username {
+    margin-left: 115px;
+}
+input#email {
+    margin-left: 141px;
+}
+input#password {
+    margin-left: 115px;
+}
+input[type="password"] {
+    width: 250px;
+    margin-left: 53px;
+}
+button.btn.btn-success {
+    /* margin-left: 30%; */
+    margin: 2% 0 0 30%;
+}

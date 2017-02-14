@@ -1,0 +1,19 @@
+*{
+  text-decoration: none;
+  list-style-type: none;
+}
+body{
+  background: #54dfff;
+  color: white;
+}
+nav ul li{
+  display: inline;
+  font-size: 40px;
+  padding: 10px;
+}
+nav ul li a{
+  color:black;
+}
+form#loginform{
+  
+}

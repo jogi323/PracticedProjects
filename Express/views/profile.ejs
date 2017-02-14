@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <% include partials/nav.ejs %>
+    <h2>Right now you are watching the profile of <%= person %></h2>
+    <p><strong>Employee Id: </strong><%= data.empId %> </p>
+    <p><strong>Designation: </strong><%= data.designation %> </p>
+    <h2>Hobbies of <%= person %></h2>
+    <ul>
+      <% data.hobbies.forEach(function(item){ %>
+          <li>
+            <%= item %>
+          </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>

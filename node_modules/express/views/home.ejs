@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="/assets/style.css" rel="stylesheet" type="text/css"/>
+
+    <title></title>
+  </head>
+  <body>
+<% include partials/nav.ejs %>
+    <form id="loginForm" method="GET" action="/contact">
+        <div class="container">
+          <div class="uname>"
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              <button type="submit">Login</button>
+        </div>
+        <div>
+
+          <input type="checkbox" checked="checked"> Remember me
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+
+        </div>
+    </form>
+  </body>
+</html>

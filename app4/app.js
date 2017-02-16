@@ -12,16 +12,7 @@ var express = require('express');
 var router = express.Router();
 var express = require('express');
 var router = express.Router();
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/my_database');
-var Comment = new mongoose.Schema({
-  Fullname: { type: String },
-  email: { type: String },
-  password: { type: String},
-  dateofbirth: { type: Date, default: Date.now },
-  buff: Buffer
-});
-var myModel = mongoose.model('signup',Comment);
+var myModel = require('./routes/index');
 var app = express();
 
 // view engine setup

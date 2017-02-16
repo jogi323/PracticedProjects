@@ -1,6 +1,15 @@
 var express = require('express');
 var router = express.Router();
-var myModel = require('../app.js').myModel;
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/my_database');
+var Comment = new mongoose.Schema({
+  Fullname: { type: String },
+  email: { type: String },
+  password: { type: String},
+  dateofbirth: { type: Date, default: Date.now },
+  buff: Buffer
+});
+var myModel = mongoose.model('signup',Comment);
 
 
 /* GET home page. */
@@ -24,3 +33,4 @@ router.post('/login', function(req, res, next) {
 });
 
 module.exports = router;
+module.exports = myModel;

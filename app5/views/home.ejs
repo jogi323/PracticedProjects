@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="style.css" rel="stylesheet" type="text/css"  />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navigation">
+        <li><a>Details</a></li>
+        <li><a>Edit Details</a></li>
+        <li><a href="/login">logout</a></li>
+      </ul>
+    </nav>
+    <div class="container" id="details">
+      <div class="datails">
+        <img src="<%= data[0].file%>"/>
+        <h3 class="name"><label>Name</label> : <%= data[0].Fullname%></h3>
+        <h4 class="Email-Id"><label>Email-Id</label> : <%= data[0].email%></h4>
+        <h4 class="DOB"><label>Date of Birth</label> : <%= data[0].dateofbirth.toLocaleString() %></h4>
+        <h4 class="Gender"><label>Gender</label> : <%= data[0].Gender%></h4>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>

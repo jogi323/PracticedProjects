@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="style.css" rel="stylesheet" type="text/css"  />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+            <form class="form-horizontal" role="form" action="/login" method="post" enctype="multipart/form-data">
+                <h2>Registration Form</h2>
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">Full Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="firstName" placeholder="Full Name" class="form-control" name="Fullname"autofocus>
+                        <span class="help-block">Last Name, First Name, eg.: Smith, Harry</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" placeholder="Email" class="form-control" name="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="Password" name="password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birthDate" class="col-sm-3 control-label">Date of Birth</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="birthDate" class="form-control" name="dateofbirth">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-3">Gender</label>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" id="femaleRadio" name="Gender" value="Female">Female
+                                </label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" id="maleRadio" name="Gender" value="Male">Male
+                                </label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" id="uncknownRadio" name="Gender" value="Unknown">Unknown
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.form-group -->
+                <div class="form-group">
+                    <label for="imgage" class="col-sm-3 control-label">Image</label>
+                    <div class="col-sm-9">
+                        <input type="file" id="myFile" name="file" class="form-control">
+                        <!-- <input type="submit" value="Upload Image" name="submit"><br/><br/> -->
+                        <span id="status"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">I accept <a href="#">terms</a>
+                            </label>
+                        </div>
+                    </div>
+                </div> <!-- /.form-group -->
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    </div>
+                </div>
+                <h3><%= msg%></h3>
+            </form> <!-- /form -->
+            
+        </div> <!-- ./container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
